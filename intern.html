@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Internship registration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    h4{
+        text-align: center;
+        color:#800000;
+      
+    }
+    .container{
+      width: 90%;
+      background-color: #f2f2f2 ;
+      height: 100%;
+      border-radius: 15px;
+
+    }
+    .btn{
+       text-align: center;
+    }
+    label{
+        color: #009999;
+        font-weight: bold;
+    }
+    hr{
+        margin-left: 37%;
+        margin-right: 37%;
+       background-color: #009999;
+        border-width: 2px;
+    }
+    @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.circles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    /* border-radius: 50%!important; */
+    height: 20px;
+    background: #49b6c9;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+  }
+
+  .circles li:nth-child(1) {
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+  }
+
+  .circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+  }
+
+  .circles li:nth-child(3) {
+    left: 6%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+  }
+
+  .circles li:nth-child(4) {
+    left: 89%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+  }
+
+  .circles li:nth-child(5) {
+    left: 90%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+  }
+
+  .circles li:nth-child(6) {
+    left: 85%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 3s;
+  }
+
+  .circles li:nth-child(7) {
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 7s;
+  }
+
+  .circles li:nth-child(8) {
+    left: 10%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+  }
+
+  .circles li:nth-child(9) {
+    left: 100%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+  }
+
+  .circles li:nth-child(10) {
+    left: 95%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.8;
+      border-radius: 0;
+    }
+
+    100% {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+    }
+  
+}
+</style>
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+        <a href="index.html" class="logo"><img src="https://www.hradiinfotech.com/images/logo.png" height="85px" alt="logo" /></a>
+    <h4>INTERNSHIP REGISTRATION</h4>
+    <hr class="solid">
+  
+<div class="container">
+   <br><br>
+    <form>  
+  <div class="row">
+    <div class="col-6">
+        
+            <div class="form-group">
+              <label for="Name">Name</label>
+              <input type="Name" class="form-control" id="Txt_name" placeholder="Enter Name">
+            </div>
+    </div>
+   
+    <div class="col-6">
+        <div class="form-group">
+            <label for="Degree">Degree</label>
+            <select class="form-control" id="Txt_degree">
+                <option class="form-opt" value="choose">Choose Degree</option>
+                <option class="form-opt" value="BBA">BBA</option>
+                <option class="form-opt" value="BCA">BCA</option>
+                <option class="form-opt" value="BCOM">BCOM</option>
+                <option class="form-opt" value="BE">BE</option>
+                <option class="form-opt" value="Bsc">Bsc</option>
+                <option class="form-opt" value="BTech">BTech</option>
+                <option class="form-opt" value="Diploma">Diploma</option>
+                <option class="form-opt" value="MA">MA</option>
+                <option class="form-opt" value="MBA">MBA</option>
+                <option class="form-opt" value="MCA">MCA</option>
+                <option class="form-opt" value="ME">ME</option>
+                <option class="form-opt" value="Msc">Msc</option>
+                <option class="form-opt" value="Msw">Msw</option>
+                <option class="form-opt" value="MTech">MTech</option>
+                <option class="form-opt" value="PGDM">PGDM</option>
+            </select>
+          </div>
+    </div><br>
+    <div class="col-6">
+        
+        <div class="form-group">
+          <label for="phone_no">Phone no</label>
+          <input type="Text" class="form-control" id="Txt_phone" placeholder="Phone No">
+        </div>
+    </div>
+     <div class="col-6">
+        
+    <div class="form-group">
+      <label for="Email">Email Address</label>
+      <input type="email" class="form-control" id="Txt_email" placeholder="Email Address">
+    </div>
+    </div>
+    <div class="col-6">
+        
+        <div class="form-group">
+          <label for="clg_Name">College Name</label>
+          <input type="clg_Name" class="form-control" id="Txt_clg" placeholder="College Name">
+        </div>
+</div>
+
+<div class="col-6">
+    <div class="form-group">
+        <label for="Internship">Mode of Internship</label>
+        <select class="form-control" id="Txt_Internship">
+          <option>Select mode</option>
+          <option>ONLINE</option>
+          <option>OFFLINE</option>
+        </select>
+      </div>
+</div>
+<div class="col-6">
+    <div class="form-group">
+        <label for="Domain">Domain</label>
+        <select class="form-control" id="Txt_Domain">
+          <option>Select Domain</option>
+         
+        </select>
+      </div>
+</div>
+<div class="col-6">
+    <div class="form-group">
+        <label for="Technology">Technology</label>
+        <select class="form-control" id="Txt_Technology">
+          <option>Select Technology</option>
+          
+        </select>
+      </div>
+</div>
+<div class="col-6">
+    <div class="form-group">
+        <label for="Duration">Duration</label>
+        <select class="form-control" id="Txt_Duration">
+          <option>Choose Duration</option>
+          <option>10 Days</option>
+          <option>15 Days</option>
+          <option>30 Days</option>
+          <option>45 Days</option>
+          <option>2 Months</option>
+          <option>3 Months</option>
+          <option>6 Months</option>
+        </select>
+      </div>
+</div>
+<div class="col-6">
+    <div class="form-group">
+        <label for="year">Pass Out Year</label>
+        <select class="form-control" id="Txt_year">
+          <option>Choose Year</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+        </select>
+      </div>
+</div>
+<div class="col-6">
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+</div>
+</div>
+
+<div class="text-center">
+<button type="button" class="btn btn-primary">Register</button>
+</div>
+  <br><br>
+</form>
+</div>
+</div >
+</body>
+</html>
